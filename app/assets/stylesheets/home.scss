@@ -1,0 +1,56 @@
+.home {
+  #hero {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #EEE;
+    margin-top: -20px;
+
+    h2 {
+      position: relative;
+      font-size: 35px;
+      margin-bottom: 40px;
+    }
+  }
+
+  #simulate, #financial {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  #properties {
+    position: relative;
+    border: 1px solid #EEE;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .property {
+      position: relative;
+
+      .panel-heading {
+        position: relative;
+        background-color: #EEE;
+        height: 214px;
+      }
+
+      .panel-body {
+        position: relative;
+        border-top-right-radius: 0px !important;
+        border-top-left-radius: 0px !important;
+      }
+
+      h4 {
+        position: relative;
+        margin-bottom: 15px;
+      }
+
+      p {
+        position: relative;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 12px;
+      }
+    }
+  }
+}

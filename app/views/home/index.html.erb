@@ -1,0 +1,183 @@
+<section id="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="bold text-center">Encontre seu lugar<br /> no mundo</h2>
+        
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <%= form_for(:property) do |f| %>
+                
+                <div class="col-md-9">
+                  <%= f.text_field :name, class: 'form-control', required: 'required',
+                  placeholder: 'Busque pela região ou empreendimento.', style: 'height: 44px' ;%>
+                </div>
+
+                <div class="col-md-3">
+                  <%= f.submit 'Buscar', class: 'btn btn-primary btn-lg' %>
+                </div>
+              <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 col-md-offset-1">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h5 class="bold text-center">
+                  Milhares de opções para encontrar
+                  o imóvel que combina com você.
+                </h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h5 class="bold text-center">
+                  Inteligencia Artificial para
+                  aumentar exponencialmente as chances de match
+                </h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h5 class="bold text-center">
+                  Inteligencia de mercado para
+                  te ajudar a escolher o melhor negócio
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="simulate">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="row">
+          <div class="col-md-10 col-md-offset-2">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h3 class="bold">Calculadora e simulador de<br />
+                financiamento imobiliário
+                </h3>
+
+                <p>Use nossa calculadora para descobrir como
+                aproveitar seu<br /> investimento da forma mais inteligente
+                possível.
+                </p>
+
+                <%= link_to '',
+                  class: 'btn btn-primary btn-lg top' do %>
+                  Experimentar
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="properties">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="bold text-center">Inspire-se com a nossa seleção</h3>
+        <p class="text-center">Confira as oportunidades que separamos para você.</p>
+        <br />
+
+        <div class="row">
+          <% (1..12).each do |property| %>
+            <div class="col-md-3 property">
+              <div class="panel-heading"></div>
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <h4 class="bold">Legi Perdizes</h4>
+                  <p>Apresentamos o Monogram, um produto
+                  imobiliario de alto padrão que une arquitetura
+                  sofisticada, decor...
+                  </p>
+
+                  <ul class="list-unstyled list-inline" style="margin-top: 15px;">
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-ruler"></i>
+                        121m²
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-building"></i>
+                        Não iniciada
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fa-solid fa-bed-pulse"></i>
+                        3
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          <% end %>
+
+          <br />
+
+          <div class="text-center">
+            <%= link_to 'Veja mais destaques', properties_path, 
+            class: 'btn btn-primary btn-lg' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="financial">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="row">
+          <div class="col-md-10 col-md-offset-2">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h3 class="bold">Calculadora e simulador de<br />
+                financiamento imobiliário
+                </h3>
+
+                <p>Use nossa calculadora para descobrir como
+                aproveitar seu<br /> investimento da forma mais inteligente
+                possível.
+                </p>
+
+                <%= link_to '',
+                  class: 'btn btn-primary btn-lg top' do %>
+                  Experimentar
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

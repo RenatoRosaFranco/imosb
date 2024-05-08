@@ -1,0 +1,29 @@
+.franchise {
+
+  #hero {
+    margin-top: -20px;
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    border: 1px solid #EEE;
+  }
+  
+  #benefits {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  #franchising {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border: 1px solid #EEE;
+
+    .well {
+      position: relative;
+      height: 200px;
+      margin-bottom: 20px;
+    }
+  }
+}
