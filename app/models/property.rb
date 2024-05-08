@@ -1,7 +1,12 @@
 # frozen_string_literal: true
 
 class Property < ApplicationRecord
+  # Associations
+  has_many :favorites, as: :favoritable, dependent: :destroy
   belongs_to :user
+
+  # Validations
+  validates :cover_image, :name, :amount, :cover_image, presence: true
 end
 
 #------------------------------------------------------------------------------
