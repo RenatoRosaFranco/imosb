@@ -2,6 +2,9 @@
 
 Rails.application.routes.draw do
 
+  # Admin
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+
   # Authentication
   devise_for :users, {}
 
