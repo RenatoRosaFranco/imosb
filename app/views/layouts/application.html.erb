@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <title>Imosb</title>
+    <title>Imosb - <%= yield :title %></title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="<%= yield :keywords %>" />
+    <meta name="description" content="<%= yield :description %>" />
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://kit.fontawesome.com/5165849ba2.js" crossorigin="anonymous"></script>
+    <%= load_json_ld(yield :ld_json) %>
   </head>
   <body class="<%= controller.controller_name %>">
     <%= render partial: 'layouts/header' %>

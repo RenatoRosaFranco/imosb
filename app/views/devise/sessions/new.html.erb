@@ -1,7 +1,16 @@
-<%= provide :title, '' %>
-<%= provide :description, '' %>
-<%= provide :keywords, '' %>
-<%= provide :ld_json, {} %>
+<%= provide :title, 'Login' %>
+<%= provide :description, 'Faça login na sua conta para acessar nossos serviços.' %>
+<%= provide :keywords, 'login, acesso, conta' %>
+
+<% ld_json = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": "https://imosb.com.br",
+  "name": "ImoSB",
+  "description": "Encontre seu lugar no mundo"
+} %>
+
+<%= provide :ld_json, ld_json %>
 
 <section id="signin">
   <div class="container">
